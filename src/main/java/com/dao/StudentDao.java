@@ -19,10 +19,6 @@ import java.util.List;
 public class StudentDao {
     @PersistenceContext(name = "collegePersistenceUnit")
     private EntityManager entityManager;
-    private List<String> states = Arrays.asList("Florida");
-    private List<String> campus = Arrays.asList("Wolfson");
-
-
 
     public List<Student> selectAllStudents() throws RuntimeException {
         try {

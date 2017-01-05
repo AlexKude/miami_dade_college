@@ -14,4 +14,21 @@ public class WelcomeController {
     public String welcomePage(){
         return "index";
     }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/index")
+    public String homePage(){
+        return "index";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/student")
+    public String welcomeStudent(){
+        return "student";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/statistics")
+    public String welcomeStatistics(){
+        return "statistics";
+    }
+
+
 }

@@ -11,14 +11,12 @@
     <title>Miami Dade College</title>
 </head>
 <body>
-<h3>UNITED STATES OF AMERICA</h3>
-<h3>STATE OF FLORIDA</h3>
-<h3>MIAMI DADE COLLEGE</h3>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p><a href="student/allStudents">OK</a></p>
-
+<center>
+<h2>UNITED STATES OF AMERICA</h2>
+<h2>STATE OF FLORIDA</h2>
+<h2>MIAMI DADE COLLEGE</h2>
+<p><a href="//localhost:9900/MiamiDadeCollege/student">STUDENTS</a></p>
+<p><a href="//localhost:9900/MiamiDadeCollege/statistics">STATISTICS</a></p>
+</center>
 </body>
 </html>

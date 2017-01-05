@@ -24,6 +24,28 @@ public class Student {
     private String campus;
     private Date dateOfJoin;
 
+    public Student() {
+    }
+
+    public Student(int id, String surname, String name, Date dateOfBirth, String state, String campus, Date dateOfJoin) {
+        this.id = id;
+        this.surname = surname;
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.state = state;
+        this.campus = campus;
+        this.dateOfJoin = dateOfJoin;
+    }
+
+    public Student(String surname, String name, Date dateOfBirth, String state, String campus, Date dateOfJoin) {
+        this.surname = surname;
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.state = state;
+        this.campus = campus;
+        this.dateOfJoin = dateOfJoin;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "student_seq")
     @SequenceGenerator(name = "student_seq", sequenceName = "student_id_seq", allocationSize = 1)
@@ -122,14 +144,13 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", surname='" + surname + '\'' +
-                ", name='" + name + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                ", state='" + state + '\'' +
-                ", campus='" + campus + '\'' +
-                ", dateOfJoin=" + dateOfJoin +
-                '}';
+        return "Student : " +
+                "id : " + id +
+                ", Family name : " + surname + '\'' +
+                ", First Name : " + name + '\'' +
+                ", Date of Birth : " + dateOfBirth +
+                ", State : " + state + '\'' +
+                ", Campus : " + campus + '\'' +
+                ", Date of Join : " + dateOfJoin + "\n";
     }
 }

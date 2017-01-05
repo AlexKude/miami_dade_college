@@ -13,7 +13,7 @@ import java.sql.Date;
  * Created by Main Server on 04.01.2017.
  */
 @Entity
-@Table(name = "student", schema = "public")
+@Table(name = "student")
 public class Student {
     private int id;
     private String surname;

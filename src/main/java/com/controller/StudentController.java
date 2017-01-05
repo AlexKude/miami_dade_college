@@ -1,6 +1,5 @@
 package com.controller;
 
-import com.dao.StudentDao;
 import com.model.Student;
 import com.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
